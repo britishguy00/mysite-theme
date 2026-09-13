@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Community Hub</title>
+  <style>
+    body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #313338; display: flex; height: 100vh; overflow: hidden; color: #dbdee1; }
+    .server-list { width: 72px; background-color: #1e1f22; display: flex; flex-direction: column; align-items: center; padding-top: 12px; gap: 8px; }
+    .server-icon { width: 48px; height: 48px; background-color: #5865f2; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold; font-size: 18px; cursor: pointer; transition: border-radius 0.2s; }
+    .server-icon:hover { border-radius: 30%; background-color: #4752c4; }
+    .channel-sidebar { width: 240px; background-color: #2b2d31; display: flex; flex-direction: column; padding: 15px 10px; box-sizing: border-box; }
+    .server-name { color: white; font-weight: bold; font-size: 16px; margin-bottom: 20px; border-bottom: 1px solid #1f2023; padding-bottom: 10px; }
+    .channel-title { font-size: 12px; font-weight: bold; color: #949ba4; text-transform: uppercase; margin-bottom: 8px; padding-left: 8px; }
+    .channel-btn { padding: 8px 12px; border-radius: 4px; font-weight: 500; color: #949ba4; cursor: pointer; display: flex; align-items: center; margin-bottom: 2px; }
+    .channel-btn:hover { background-color: #35373c; color: #dbdee1; }
+    .channel-btn.active { background-color: #404249; color: white; }
+    .main-content { flex-grow: 1; display: flex; flex-direction: column; background-color: #313338; }
+    .chat-header { height: 48px; border-bottom: 1px solid #1f2023; display: flex; align-items: center; padding-left: 20px; color: white; font-weight: bold; font-size: 16px; }
+    iframe { flex-grow: 1; border: none; width: 100%; height: calc(100% - 48px); background-color: #313338; }
+  </style>
+</head>
+<body>
+
+  <!-- Left Server Sidebar Icons -->
+  <div class="server-list">
+    <div class="server-icon" title="Main Server">⚔️</div>
+  </div>
+
+  <!-- Channel Navigation Sidebar -->
+  <div class="channel-sidebar">
+    <div class="server-name">🏫 Study Guild Server</div>
+    <div class="channel-title">Text Channels</div>
+    <div class="channel-btn active"># general-chat</div>
+  </div>
+
+  <!-- Chat Area Frame -->
+  <div class="main-content">
+    <div class="chat-header"># general-chat</div>
+    
+    <!-- ⚠️ PASTE YOUR GOOGLE SHEET SHARING EDIT LINK INSIDE THE SRC ATTRIBUTE BELOW -->
+    <iframe src="https://docs.google.com/spreadsheets/d/1gZUPI-fveZfs3PaBW0dqZHs42Df45EgZUmFzrPragBg/edit?usp=sharing"></iframe>
+  </div>
+
+</body>
+</html>
